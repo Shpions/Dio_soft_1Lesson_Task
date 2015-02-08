@@ -5,15 +5,18 @@ public class Person {
     private final String name;
     private final boolean sex;
     private final int age;
+    //local code review (vtegza): should be private @ 2/8/2015
     Enum jobTitle;
 
+    //local code review (vtegza): use more meaningful name instead of "e" @ 2/8/2015
     public Person(String name, boolean sex, int age, Enum e) {
         this.name = name;
         this.sex = sex;
         this.age = age;
+        //local code review (vtegza): stick to "this."  @ 2/8/2015
         jobTitle=e;
     }
-
+//local code review (vtegza): add getters @ 2/8/2015
 
     @Override
     public boolean equals(Object o) {
